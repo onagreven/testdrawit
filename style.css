@@ -22,8 +22,8 @@ webkit-user-select: none;
  width: 80px;
  height:80px;
  position: fixed;
- left: 254px;
- top: 698px;
+  left: 253px;
+ top: 700px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
 } /* hierboven is de stijl van de image knop, kan je stelen van 'buttons hieronder van camerabediening' */
