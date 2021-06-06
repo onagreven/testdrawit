@@ -1,0 +1,116 @@
+<html>
+  <head>
+ <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+ <link rel="stylesheet" href="https://use.typekit.net/dyv4zqy.css">
+  	<link rel="apple-touch-icon" src="img/icon.png"> <!--beginscherm icoon-->
+  	<link rel="apple-touch-startup-image" src="img/launch.png"> <!--launch scherm afbeelding-->
+  	<meta name="apple-mobile-web-app-title" content="AppTitle">
+    <!--<script src="js/magictouch.js"></script>-->
+       <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Smart Device Camera Template for HTML, CSS, JS and WebRTC"
+    />
+    <meta name="keywords" content="HTML,CSS,JavaScript, WebRTC, Camera" />
+    <meta name="author" content="Kasper Kamperman" />
+    <title>Mobile First Camera Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="vid_container">
+        <video id="video" autoplay playsinline></video>
+        <div id="video_overlay"></div>
+      </div>
+      <div id="gui_controls">
+        <button
+          id="switchCameraButton"
+          name="switch Camera"
+          type="button"
+          aria-pressed="false"
+        ></button>
+         <button
+          id="drawGuidesButton"
+          name="draw Guides"
+          type="button"
+          aria-pressed="false"
+        ></button>
+        <button 
+        id="takePhotoButton" 
+        name="take Photo" 
+        type="button"
+        aria-pressed="false"
+        ></button>
+        <button
+          id="toggleFullScreenButton"
+          name="toggle FullScreen"
+          type="button"
+          aria-pressed="false"
+        ></button>
+
+       <!-- <button onclick="myFunction()">Help</button>-->
+       <!--  <div style="text-align:right;font-family: Verdana; font-size: 10px; color:white;">
+   <p>Click to select.</p>
+       <p>Click on handles to resize.</p>
+       <p> Double click to create new.</p
+
+    </div>>-->
+<!--dit is popup venster met informatie-->
+<div class="popup" onclick="myFunction()">
+  <img src="img/help_white_24dp.svg">
+  <span class="popuptext" id="myPopup"> 
+  	<span style= "font-family: rig-solid-bold-reverse"> ? </span> 
+  	<br /> <span style= "font-family: rig-solid-bold-reverse"> Draw it </span><br /> is een webapplicatie die je helpt bij het maken van observatietekeningen. <br />
+  	<br /> Hoe het werkt? <br />
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 1 </span> Kies je object <br />
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 2 </span>  Installeer je smartphone houder of maak hem zelf via: https://onagreven.wixsite.com/draw-it  <br />
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 3 </span>  Bevestig je smartphone <br />
+
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 4 </span>  Draai deze richting het tekenobject<br />
+
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 5 </span>  Voeg de hulplijnen en basis vormen toe waar nodig <br />
+
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 6 </span>  Draai de smartphone terug boven je blad<br />
+
+<br /> <span style= "font-family: rig-solid-bold-reverse"> 7 </span> Tekenen maar <br />
+
+<br /> <span style= "font-family: rig-solid-bold-reverse"> Enjoy </span>  <br />
+
+
+</span>
+</div> <!--dit is popup venster met informatie-->
+
+      </div>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <!--  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
+    <script src="js/adapter.min.js"></script>
+    <script src="js/screenfull.min.js"></script>
+    <script src="js/howler.core.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script>
+function myFunction() {
+  alert("Alert tekst\nVolgende regel, hier komt de tekst met informatie over de applicatie");
+}
+</script> -->
+
+    <object id="tuio" type="application/x-tuio">Plugin FAILED to load</object>
+  </body>
+</html>
+
+
+
+ <div id="container2">
+    <canvas id="canvas2" width="375" height="812"> <!-- geeft breedte en hoogte aan canvas met vormen -->
+    This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+    </div>
+    
