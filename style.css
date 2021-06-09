@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   padding: 0px;
+-webkit-user-select: none; /* zorgt er voor dat copy paste functie uit*/
+
  /* background: #000;*/
  
  font-family: 'Poppins';
@@ -8,7 +10,7 @@ body {
   touch-action: none; /*zorgt er voor dat touchscreen niet naar boven/beneden beweegt wanneer je figuren verplaatst*/
 
 }
-webkit-user-select: none;
+/*webkit-user-select: none;*/
 /* stuk hieronder is voor popupvenster informatie*/
 
 /* Popup container, ontwerp van?? kader rond info knop*/
